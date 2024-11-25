@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <link rel="stylesheet"
+          href="styles.css">
+    <title>Fintube</title>
+</head>
+
+<body>
+    <nav>
+        <div id="youtube-logo-container"></div>
+        <input type="text"
+               placeholder="Search"
+               id="search-bar">
+        <div id="icon-container">
+            <i class="material-icons"
+               id="app-icon">&#xe5c3;
+            </i>
+            <i class="fas fa-bell"></i>
+        </div>
+    </nav>
+    <section id="side-bar-section">
+        <div>
+            <ul class="side-bar">
+                <li id="active-title">
+                    <i class="material-icons"
+                       id="home-icon">&#xe88a;
+                    </i>
+                    <a href="#" 
+                       class="side-bar-titles active">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe87a;</i>
+                    <a href="#" 
+                       class="side-bar-titles">
+                        Explore
+                    </a>
+                </li>
+                <li>
+                    <i class="material-icons">&#xe064;
+
+                    </i>
+                    <a href="#" 
+                       class="side-bar-titles">
+                        Subscriptions
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul class="side-bar">
+               
+                <li>
+                    <i class="material-icons">&#xe889;</i>
+                    <a href="#"
+                       class="side-bar-titles">
+                        History
+                    </a>
+                </li>
+                <li>
+                    <i class="material-icons">
+                        &#xe63a;
+                    </i>
+                    <a href="#"
+                       class="side-bar-titles">
+                        Your videos
+                    </a>
+                </li>
+                <li>
+                    <i class="fas fa-clock"></i>
+                    <a href="#" 
+                       class="side-bar-titles">
+                        Watch later
+                    </a>
+                </li>
+                <li>
+                    <i class='fas fa-thumbs-up'></i>
+                    <a href="#"
+                       class="side-bar-titles">
+                        Liked videos
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="upload-container">
+            <h1>Upload Your Content</h1>
+        
+            <!-- Video Upload Section -->
+            <div class="upload-section">
+              <h2>Upload Video</h2>
+              <input type="file" id="video-upload" accept="video/*">
+            </div>
+        
+            <!-- Ad Upload Section -->
+            <div class="upload-section">
+              <h2>Upload Advertisement</h2>
+              <input type="file" id="ad-upload" accept="image/*,video/*">
+            </div>
+        
+            <button class="submit-btn" onclick="uploadContent()">Submit</button>
+          </div>
+        
+          <script>
+            function uploadContent() {
+              const videoFile = document.getElementById("video-upload").files[0];
+              const adFile = document.getElementById("ad-upload").files[0];
+              
+              if (!videoFile && !adFile) {
+                alert("Please upload at least one file!");
+                return;
+              }
+        
+              alert("Files uploaded successfully!");
+            }
+          </script>
+        
+    </section>
+    <main id="video-section">
+        <div class="video-container">
+            <img src="lulu.jpg" id="image-1" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="OIP.jpg" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Top 5 Investment Strategies</a>
+                    <a href="#" class="channel-name">Finance Insights</a>
+                    <a href="#" class="views">1M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">2 weeks ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="OIP (2).jpg" id="image-2" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="R.jpg" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Understanding Stock Market Basics</a>
+                    <a href="#" class="channel-name">Wealth Academy</a>
+                    <a href="#" class="views">500K views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">1 month ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="OIP.jpg" id="image-3" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="R.jpg" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">How to Build a Retirement Plan</a>
+                    <a href="#" class="channel-name">Smart Finance</a>
+                    <a href="#" class="views">700K views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">3 weeks ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="OIP (3).jpg" id="image-4" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="R.jpg".jpg" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">Best Mutual Funds to Invest in 2024</a>
+                    <a href="#" class="channel-name">Finance Guru</a>
+                    <a href="#" class="views">1.5M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">5 days ago</a>
+                </div>
+            </div>
+        </div>
+        <div class="video-container">
+            <img src="GettyImages-1190995919-bce27cedc8fa4274b70ffcd0062e6098.jpg" id="image-5" class="images">
+            <div class="video-description">
+                <div class="channel-dp-container-2">
+                    <img src="R.jpg" class="channel-dp-2">
+                </div>
+                <div class="video-details">
+                    <a href="#" class="video-title">How to Save on Taxes Legally</a>
+                    <a href="#" class="channel-name">Tax Experts</a>
+                    <a href="#" class="views">2M views</a>
+                    <i class="fas fa-circle"></i>
+                    <a href="#" class="time">3 months ago</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+       
+</body>
+
+</html>
+
